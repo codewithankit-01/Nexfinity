@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexfinity | Digital Experience Studio</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Nexfinity is a digital experience studio founded by Ankit Sharma, building distinctive websites, brands, and technology for ambitious businesses.">
+  <meta name="keywords" content="Nexfinity, digital studio, website development, web design, branding, Ankit Sharma, founder">
+  <meta property="og:title" content="Nexfinity | Digital Experience Studio">
+  <meta property="og:description" content="Your next digital dimension. Founded by Ankit Sharma.">
+  <meta property="og:image" content="Logo/Nexfinity-logo.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="Logo/Nexfinity-mark.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="pitch-black-theme">
+
+  <!-- Custom Glowing Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Top Ambient Glow Line -->
+  <div class="top-ambient-light"></div>
+
+  <!-- Background Particle & Grid Canvas -->
+  <canvas id="cyberCanvas" class="cyber-canvas"></canvas>
+
+  <!-- Top Navigation Header -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar container">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" data-magnetic>
+        <img src="Logo/Nexfinity-brand.png" alt="Nexfinity" class="brand-logo">
+      </a>
+
+      <!-- Desktop Navigation Links (No Testimonials) -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link active">Home</a>
+          <span class="nav-indicator"></span>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+          <span class="nav-indicator"></span>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+          <span class="nav-indicator"></span>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+          <span class="nav-indicator"></span>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link">Services</a>
+          <span class="nav-indicator"></span>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+          <span class="nav-indicator"></span>
+        </li>
+      </ul>
+
+      <!-- CTA Button -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn-talk" data-magnetic>
+          <span>Let's Talk</span>
+          <span class="btn-talk-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu (No Testimonials) -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <img src="Logo/Nexfinity-brand.png" alt="Nexfinity" class="brand-logo">
+      <button class="drawer-close-btn" id="drawerCloseBtn">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-item">Home</a></li>
+      <li><a href="#about" class="mobile-nav-item">About</a></li>
+      <li><a href="#skills" class="mobile-nav-item">Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-item">Projects</a></li>
+      <li><a href="#services" class="mobile-nav-item">Services</a></li>
+      <li><a href="#contact" class="mobile-nav-item">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn-hero-primary w-full">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+      <div class="mobile-socials">
+        <a href="https://github.com/codewithankit-01" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/919672244908" class="whatsapp-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=thenexfinity@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.instagram.com/theankitsharma1/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- ==================== HERO SECTION (PIXEL PERFECT REPLICA) ==================== -->
+    <section class="hero-section" id="hero">
+      <!-- Watermark Background Typography -->
+      <div class="watermark-bg" aria-hidden="true">NEXFINITY</div>
+
+      <div class="hero-container container">
+        
+        <!-- Left Column: Content & Calls to Action -->
+        <div class="hero-content" data-reveal="fade-up">
+          
+          <!-- Badge -->
+          <div class="hero-badge">
+            <span class="status-pulse-dot"></span>
+            <span class="badge-role">Digital Experience Studio</span>
+            <span class="badge-divider">|</span>
+            <span class="badge-sub">Founded by Ankit Sharma</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="hero-title">
+            <span class="title-greeting">Meet</span>
+            <span class="title-name">
+              <span class="highlight-sharma">Nexfinity</span>
+              <!-- Authentic Neon Brush Underline SVG -->
+              <svg class="brush-stroke" viewBox="0 0 280 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 14C55.5 5 160 3.5 276 18C210 24 100 21 28 17" stroke="#CC0810" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </h1>
+
+          <!-- Dynamic Subtitle with Rotating Typewriter -->
+          <div class="hero-subtitle-box">
+            <h2 class="hero-subtitle">
+              We create <span class="typed-text-target" id="typewriter">Digital Experiences</span><span class="cursor-blink">|</span>
+            </h2>
+            <p class="hero-description">
+              Strategy, design, and technology for your next digital dimension.
+            </p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn-hero-primary" data-magnetic>
+              <span>Explore Our Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button class="btn-hero-secondary" id="openIntroBtn" data-magnetic>
+              <span class="play-icon-ring">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span class="play-label">Meet Nexfinity</span>
+            </button>
+          </div>
+
+          <!-- Stats Strip -->
+          <div class="hero-stats">
+            <!-- Stat 1 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper">
+                <span class="stat-symbol">&lt;/&gt;</span>
+              </div>
+              <div class="stat-info">
+                <div class="stat-value">
+                  <h3 class="stat-number" data-target="1">0</h3>
+                  <span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Years of Experience</p>
+              </div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <!-- Stat 2 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper">
+                <i class="fa-solid fa-folder-closed"></i>
+              </div>
+              <div class="stat-info">
+                <div class="stat-value">
+                  <h3 class="stat-number" data-target="15">0</h3>
+                  <span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Projects Completed</p>
+              </div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <!-- Stat 3 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+              <div class="stat-info">
+                <div class="stat-value">
+                  <h3 class="stat-number" data-target="100">0</h3>
+                  <span class="stat-plus">%</span>
+                </div>
+                <p class="stat-label">Client Satisfaction</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology Platforms -->
+          <div class="hero-brands">
+            <div class="brands-header">
+              <span class="brands-title">Built with leading platforms</span>
+              <div class="brands-line"></div>
+            </div>
+            <div class="brands-logos">
+              <div class="brand-item" title="Google"><i class="fa-brands fa-google"></i> <span>Google</span></div>
+              <div class="brand-item" title="Microsoft"><i class="fa-brands fa-microsoft"></i> <span>Microsoft</span></div>
+              <div class="brand-item" title="Meta"><i class="fa-brands fa-meta"></i> <span>Meta</span></div>
+              <div class="brand-item" title="GitHub"><i class="fa-brands fa-github"></i> <span>GitHub</span></div>
+              <div class="brand-item" title="Vercel">
+                <svg width="18" height="16" viewBox="0 0 24 20" fill="currentColor">
+                  <path d="M12 1L24 22H0L12 1Z"/>
+                </svg>
+                <span>Vercel</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Nexfinity Studio Visual -->
+        <div class="hero-visual" id="heroVisualWrap">
+          
+          <!-- 3D Parallax Tilt Canvas Container -->
+          <div class="desk-setup-scene" id="deskTiltCard">
+
+            <!-- High-Res Desk Setup Artwork Layer -->
+            <div class="desk-image-wrapper">
+              <img src="assets/images/hero-desk.png" alt="Nexfinity digital studio workspace" class="desk-main-img" id="deskImg">
+              <div class="desk-glow-overlay"></div>
+              
+              <!-- Ambient Red Lamp Light Cone Glow Overlay -->
+              <div class="lamp-interactive-flare"></div>
+              
+              <!-- Neon Sign Glowing Hotspot -->
+              <div class="neon-sign-hotspot" id="neonWallSign"></div>
+            </div>
+
+            <!-- Interactive Live Code Display Floating Overlay -->
+            <div class="live-terminal-overlay" id="liveTerminal">
+              <div class="terminal-bar">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="terminal-tab active">
+                  <i class="fa-brands fa-python text-accent"></i> main.py
+                </div>
+              </div>
+              <div class="terminal-body">
+                <pre><code id="terminalCode" aria-label="Nexfinity company profile code"><span class="kw">class</span> <span class="var">Nexfinity</span>:
+  <span class="prop">founder</span> = <span class="str">"Ankit Sharma"</span>
+  <span class="prop">focus</span> = <span class="str">"Design + Technology"</span>
+  <span class="prop">mission</span> = <span class="str">"Your next digital dimension"</span>
+  <span class="prop">status</span> = <span class="str">"Building what's next"</span></code></pre>
+              </div>
+            </div>
+
+            <!-- Floating Live Status Badge -->
+            <div class="floating-cyber-chip">
+              <span class="cyber-chip-pulse"></span>
+              <span>Online &bull; Building what's next</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Scroll Prompts -->
+      <div class="hero-bottom-indicators">
+        <!-- Center Animated Mouse Icon -->
+        <a href="#about" class="mouse-scroll-indicator" aria-label="Scroll down to about">
+          <div class="mouse-shell">
+            <span class="mouse-wheel"></span>
+          </div>
+        </a>
+
+        <!-- Right Side Vertical Rotated Text -->
+        <div class="scroll-down-vertical">
+          <span>Scroll Down</span>
+          <div class="scroll-line-animated"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">&lt;01. ABOUT NEXFINITY /&gt;</div>
+          <h2 class="section-title">A studio built for <span class="text-accent">what's next</span></h2>
+          <p class="section-subtitle">Bringing strategy, design, and technology together to shape standout digital experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left: Real Photo Avatar Card -->
+          <div class="about-card-wrap" data-reveal="fade-right">
+            <div class="about-avatar-card">
+              <div class="avatar-card-glow"></div>
+              <div class="avatar-img-box">
+                <img src="assets/images/ankit-real.jpg" alt="Ankit Sharma Photo" class="avatar-img">
+                <div class="avatar-scanline"></div>
+              </div>
+
+              <div class="avatar-card-info">
+                <div class="avatar-status-pill">
+                  <span class="green-indicator"></span>
+                  <span>Building with Nexfinity</span>
+                </div>
+                <h3 class="avatar-name">Ankit Sharma</h3>
+                <p class="avatar-title">Founder, Nexfinity</p>
+
+                <div class="avatar-quick-stats">
+                  <div class="quick-stat">
+                    <span class="qs-val">1+</span>
+                    <span class="qs-lbl">Years of Experience</span>
+                  </div>
+                  <div class="quick-stat">
+                    <span class="qs-val">15+</span>
+                    <span class="qs-lbl">Shipped</span>
+                  </div>
+                  <div class="quick-stat">
+                    <span class="qs-val">100%</span>
+                    <span class="qs-lbl">Client Trust</span>
+                  </div>
+                </div>
+
+                <div class="avatar-card-footer">
+                  <a href="#contact" class="btn-resume">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <span>Contact Directly</span>
+                  </a>
+                  <div class="avatar-socials">
+                    <a href="https://github.com/codewithankit-01" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/919672244908" class="whatsapp-link" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=thenexfinity@gmail.com" target="_blank" rel="noopener noreferrer" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative & Interactive Tabs -->
+          <div class="about-narrative" data-reveal="fade-left">
+            <h3 class="about-heading">
+              Turning ambitious ideas into <span class="text-accent">digital experiences</span>.
+            </h3>
+            <p class="about-text">
+              I'm Ankit Sharma, founder of Nexfinity. I lead a digital experience studio focused on creating thoughtful websites, distinctive brand identities, and reliable technology for ambitious businesses.
+            </p>
+            <p class="about-text">
+              From full-stack platforms and e-commerce experiences to brand-led studio websites, Nexfinity brings design craft and modern engineering together to help businesses move forward.
+            </p>
+
+            <!-- Interactive Tabs: Journey, Tech Philosophy, Milestones -->
+            <div class="about-tabs-container">
+              <div class="about-tab-buttons">
+                <button class="tab-btn active" data-tab="philosophy">Philosophy</button>
+                <button class="tab-btn" data-tab="journey">Journey</button>
+                <button class="tab-btn" data-tab="stack">Core Arsenal</button>
+              </div>
+
+              <div class="tab-content active" id="tab-philosophy">
+                <ul class="feature-bullets">
+                  <li>
+                    <i class="fa-solid fa-bolt text-accent"></i>
+                    <div>
+                      <strong>Precision Engineering:</strong> Clean scripts, robust schemas, and zero-compromise runtime performance.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-palette text-accent"></i>
+                    <div>
+                      <strong>Distinctive Digital Craft:</strong> Clear visual identities, polished interfaces, and thoughtful micro-interactions.
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-robot text-accent"></i>
+                    <div>
+                      <strong>AI-Accelerated Speed:</strong> Leveraging Claude, Cursor, and agent-driven workflows to ship 3x faster with zero bugs.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-content" id="tab-journey">
+                <div class="journey-timeline">
+                  <div class="timeline-step">
+                    <span class="step-year">2024 - Present</span>
+                    <h4>Full-Stack Architect &amp; Web Developer</h4>
+                    <p>Building client platforms, e-commerce storefronts, and AI-powered web tools with Python, Django, WordPress, and JS.</p>
+                  </div>
+                  <div class="timeline-step">
+                    <span class="step-year">2022 - 2024</span>
+                    <h4>Frontend &amp; Python Web Engineer</h4>
+                    <p>Engineered responsive web applications, backend SQLite/MySQL schemas, and custom interactive digital interfaces.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-content" id="tab-stack">
+                <div class="focus-pills">
+                  <span class="focus-tag">Python &amp; Django</span>
+                  <span class="focus-tag">Flask Microservices</span>
+                  <span class="focus-tag">HTML5 &amp; Modern CSS3</span>
+                  <span class="focus-tag">JavaScript ES6+</span>
+                  <span class="focus-tag">WordPress CMS</span>
+                  <span class="focus-tag">SQLite Databases</span>
+                  <span class="focus-tag">Claude &amp; Cursor AI</span>
+                  <span class="focus-tag">Linux &amp; Bash</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION (100% MATCHING SKILL SCREENSHOT) ==================== -->
+    <section class="section skills-section" id="skills">
+      <!-- Ambient Animated Fire Glow & Energy Aura Behind Skills -->
+      <div class="skills-ambient-glow" aria-hidden="true"></div>
+      <div class="skills-fire-aura" aria-hidden="true"></div>
+
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">&lt;02. CAPABILITIES /&gt;</div>
+          <h2 class="section-title">Technical <span class="text-accent">Arsenal</span></h2>
+          <p class="section-subtitle">Battle-tested tools and frameworks I deploy to engineer world-class products.</p>
+        </div>
+
+        <!-- Filter Tabs for Skills -->
+        <div class="skill-tabs-nav" data-reveal="fade-up">
+          <button class="skill-tab-btn active" data-skill-filter="all">All</button>
+          <button class="skill-tab-btn" data-skill-filter="front">Frontend</button>
+          <button class="skill-tab-btn" data-skill-filter="back">Backend</button>
+          <button class="skill-tab-btn" data-skill-filter="data">Database</button>
+          <button class="skill-tab-btn" data-skill-filter="tools">AI &amp; Tools</button>
+        </div>
+
+        <!-- Grid of 12 Authentic Skills with Official Logos -->
+        <div class="skills-card-grid" id="skillsCardGrid">
+          
+          <!-- 1. HTML -->
+          <article class="skill-box-card" data-cat="front" data-reveal="fade-up" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/html.png" alt="HTML Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">HTML</h3>
+              <p class="skill-box-desc">Semantic, accessible page structure.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 2. CSS -->
+          <article class="skill-box-card" data-cat="front" data-reveal="fade-up" data-delay="50" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/css.png" alt="CSS Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">CSS</h3>
+              <p class="skill-box-desc">Layouts, glass effects and animation.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 3. JavaScript -->
+          <article class="skill-box-card" data-cat="front" data-reveal="fade-up" data-delay="100" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/js.png" alt="JavaScript Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">JavaScript</h3>
+              <p class="skill-box-desc">Interactive, dynamic user interfaces.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 4. WordPress -->
+          <article class="skill-box-card" data-cat="front" data-reveal="fade-up" data-delay="150" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/wordpress.png" alt="WordPress Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">WordPress</h3>
+              <p class="skill-box-desc">CMS websites, themes and plugins.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 5. Python -->
+          <article class="skill-box-card" data-cat="back" data-reveal="fade-up" data-delay="200" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/python.png" alt="Python Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">Python</h3>
+              <p class="skill-box-desc">Clean scripts and web back ends.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 6. Django -->
+          <article class="skill-box-card" data-cat="back" data-reveal="fade-up" data-delay="250" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/django-transparent.png" alt="Django Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">Django</h3>
+              <p class="skill-box-desc">Full-stack apps with batteries included.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 7. Flask -->
+          <article class="skill-box-card" data-cat="back" data-reveal="fade-up" data-delay="300" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/flask-transparent.png" alt="Flask Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">Flask</h3>
+              <p class="skill-box-desc">Lightweight APIs and services.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 8. SQLite -->
+          <article class="skill-box-card" data-cat="data" data-reveal="fade-up" data-delay="350" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/sqlite.png" alt="SQLite Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">SQLite</h3>
+              <p class="skill-box-desc">SQL queries, schemas and lightweight databases.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 9. Claude -->
+          <article class="skill-box-card" data-cat="tools" data-reveal="fade-up" data-delay="400" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/claude.png" alt="Claude AI Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">Claude</h3>
+              <p class="skill-box-desc">AI pair for building and debugging.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 10. Cursor AI -->
+          <article class="skill-box-card" data-cat="tools" data-reveal="fade-up" data-delay="450" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/cursor-ai-transparent.png" alt="Cursor AI Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">Cursor AI</h3>
+              <p class="skill-box-desc">AI-first code editor workflow.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 11. Antigravity -->
+          <article class="skill-box-card" data-cat="tools" data-reveal="fade-up" data-delay="500" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/antigravity-transparent.png" alt="Antigravity Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">Antigravity</h3>
+              <p class="skill-box-desc">Agent-driven development.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+          <!-- 12. Linux -->
+          <article class="skill-box-card" data-cat="tools" data-reveal="fade-up" data-delay="550" data-tilt>
+            <div class="skill-box-inner">
+              <div class="skill-icon-wrap">
+                <img src="assets/icons/linux.png" alt="Linux Tux Logo" class="skill-icon-img">
+              </div>
+              <h3 class="skill-box-title">Linux</h3>
+              <p class="skill-box-desc">Terminal, servers and tooling.</p>
+            </div>
+            <div class="skill-border-glow"></div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS SECTION (ACTUAL USER PROJECTS) ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">&lt;03. REAL PRODUCTIONS /&gt;</div>
+          <h2 class="section-title">Selected <span class="text-accent">Creations</span></h2>
+          <p class="section-subtitle">Real-world production platforms built with exceptional speed and modern design.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters" data-reveal="fade-up">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack &amp; AI</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+          <button class="filter-btn" data-filter="agency">Studio &amp; Brand</button>
+        </div>
+
+        <!-- Projects Grid with Real User Projects -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Nikita / WebWali -->
+          <article class="project-card" data-category="agency" data-reveal="fade-up">
+            <div class="project-card-border-glow"></div>
+            <div class="project-media">
+              <img src="Thumbnail/Nikita.png" alt="WebWali Creative Studio Preview" class="project-thumb project-thumb-contain">
+              <div class="project-overlay">
+                <a href="Project/Nikita Pf/index.html" target="_blank" class="btn-project-action" title="View Project Live">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <span class="project-badge">Agency &bull; Brand Identity</span>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-num">01 / PROJECT</span>
+                <div class="project-tech-tags">
+                  <span>Brand Identity</span>
+                  <span>UI/UX Design</span>
+                  <span>Creative Web</span>
+                  <span>WordPress</span>
+                </div>
+              </div>
+              <h3 class="project-title">WebWali — Creative Thinking &amp; Technical Excellence</h3>
+              <p class="project-desc">
+                Award-worthy digital creative studio portfolio blending visionary brand identity, high-conversion web architecture, and clean bespoke design.
+              </p>
+              <div class="project-footer">
+                <a href="Project/Nikita Pf/index.html" target="_blank" class="project-link">
+                  Launch Platform <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AnkitX 2.0 Cyber Ecosystem -->
+          <article class="project-card" data-category="fullstack" data-reveal="fade-up" data-delay="100">
+            <div class="project-card-border-glow"></div>
+            <div class="project-media">
+              <img src="Thumbnail/Ankit.png" alt="AnkitX Cyber Ecosystem Preview" class="project-thumb project-thumb-contain">
+              <div class="project-overlay">
+                <a href="Project/ankit-boss-2.0/ankit-boss-2.0/index.html" target="_blank" class="btn-project-action" title="View Project Live">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <span class="project-badge">Flagship &bull; Full-Stack</span>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-num">02 / PROJECT</span>
+                <div class="project-tech-tags">
+                  <span>Python</span>
+                  <span>Django / Flask</span>
+                  <span>SQLite</span>
+                  <span>Cursor &amp; AI</span>
+                </div>
+              </div>
+              <h3 class="project-title">AnkitX — Next-Gen Cyber Developer Ecosystem</h3>
+              <p class="project-desc">
+                Flagship personal developer platform engineered with custom dark cyber aesthetics, interactive particle matrices, and AI-accelerated dev workflows.
+              </p>
+              <div class="project-footer">
+                <a href="Project/ankit-boss-2.0/ankit-boss-2.0/index.html" target="_blank" class="project-link">
+                  Launch Platform <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Royal Sweets -->
+          <article class="project-card" data-category="ecommerce" data-reveal="fade-up" data-delay="200">
+            <div class="project-card-border-glow"></div>
+            <div class="project-media">
+              <img src="assets/images/projects/royal-sweets.webp" alt="Royal Sweets E-Commerce Preview" class="project-thumb">
+              <div class="project-overlay">
+                <a href="Project/royal-sweets (1)/royal-sweets/index.html" target="_blank" class="btn-project-action" title="View Project Live">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <span class="project-badge">E-Commerce &bull; Festive</span>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-num">03 / PROJECT</span>
+                <div class="project-tech-tags">
+                  <span>Festive Store</span>
+                  <span>HTML5 / CSS3</span>
+                  <span>JavaScript</span>
+                  <span>WhatsApp API</span>
+                </div>
+              </div>
+              <h3 class="project-title">Royal Sweets — Luxury Confectionery &amp; Gift Hampers</h3>
+              <p class="project-desc">
+                Premium festive e-commerce platform for handcrafted kaju katli, luxury sweets, fresh designer cakes, and Diwali gift hampers with instant WhatsApp checkout.
+              </p>
+              <div class="project-footer">
+                <a href="Project/royal-sweets (1)/royal-sweets/index.html" target="_blank" class="project-link">
+                  Launch Platform <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: NEXFINITY -->
+          <article class="project-card" data-category="fullstack agency" data-reveal="fade-up" data-delay="300">
+            <div class="project-card-border-glow"></div>
+            <div class="project-media">
+              <img src="Thumbnail/Nexfinity.png" alt="NEXFINITY Website Preview" class="project-thumb project-thumb-contain">
+              <div class="project-overlay">
+                <a href="Project/NEXFINITY/index.html" target="_blank" class="btn-project-action" title="View Project Live">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <span class="project-badge">Studio &bull; AI Solutions</span>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta">
+                <span class="project-num">04 / PROJECT</span>
+                <div class="project-tech-tags">
+                  <span>HTML5</span>
+                  <span>3D Motion</span>
+                  <span>JavaScript</span>
+                  <span>AI Services</span>
+                </div>
+              </div>
+              <h3 class="project-title">NEXFINITY — Avant-Garde Digital Dimension &amp; Studio</h3>
+              <p class="project-desc">
+                Crafting luxury digital experiences with avant-garde design, 3D motion, custom software and AI-powered solutions for ambitious businesses.
+              </p>
+              <div class="project-footer">
+                <a href="Project/NEXFINITY/index.html" target="_blank" class="project-link">
+                  Launch Platform <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">&lt;04. SERVICES /&gt;</div>
+          <h2 class="section-title">What I <span class="text-accent">Deliver</span></h2>
+          <p class="section-subtitle">Full lifecycle engineering from initial prototype to global cloud deployment.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <div class="service-card" data-reveal="fade-up" data-delay="100" data-tilt>
+            <div class="service-border-glow"></div>
+            <span class="service-index">01</span>
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="service-title">Full Stack Web Engineering</h3>
+            <p class="service-desc">
+              End-to-end development of lightning fast, production-ready web apps using Python, Django, Flask, HTML5, CSS3, and JavaScript.
+            </p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check text-accent"></i> Custom SaaS &amp; Enterprise Web Applications</li>
+              <li><i class="fa-solid fa-check text-accent"></i> Single Page Apps (SPA) &amp; SSR Platforms</li>
+              <li><i class="fa-solid fa-check text-accent"></i> Clean Architecture &amp; Modular Code</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card" data-reveal="fade-up" data-delay="200" data-tilt>
+            <div class="service-border-glow"></div>
+            <span class="service-index">02</span>
+            <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <h3 class="service-title">UI/UX &amp; Interaction Design</h3>
+            <p class="service-desc">
+              Distinctive dark interfaces with smooth animations, glassmorphism, and cyan-blue micro-interactions.
+            </p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check text-accent"></i> Bespoke Component Libraries &amp; Layouts</li>
+              <li><i class="fa-solid fa-check text-accent"></i> Smooth Web Animations (Canvas, 3D Parallax)</li>
+              <li><i class="fa-solid fa-check text-accent"></i> Accessible, Mobile-First Responsive Design</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" data-reveal="fade-up" data-delay="300" data-tilt>
+            <div class="service-border-glow"></div>
+            <span class="service-index">03</span>
+            <div class="service-icon"><i class="fa-brands fa-wordpress"></i></div>
+            <h3 class="service-title">WordPress &amp; E-Commerce</h3>
+            <p class="service-desc">
+              High-converting online storefronts, bespoke WordPress themes, custom plugins, and instant checkout integrations.
+            </p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check text-accent"></i> Custom Themes &amp; Plugin Development</li>
+              <li><i class="fa-solid fa-check text-accent"></i> WhatsApp Order Routing &amp; Payment Gateways</li>
+              <li><i class="fa-solid fa-check text-accent"></i> High-Speed Page Load &amp; Core Web Vitals</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card" data-reveal="fade-up" data-delay="400" data-tilt>
+            <div class="service-border-glow"></div>
+            <span class="service-index">04</span>
+            <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3 class="service-title">AI Tooling &amp; Agent Workflows</h3>
+            <p class="service-desc">
+              Integrating modern AI development pipelines with Claude, Cursor AI, and Antigravity for automated product delivery.
+            </p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check text-accent"></i> Agentic AI Prototyping &amp; Testing</li>
+              <li><i class="fa-solid fa-check text-accent"></i> RESTful API Services &amp; Automation Scripts</li>
+              <li><i class="fa-solid fa-check text-accent"></i> Database Modeling &amp; Query Optimization</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag">&lt;05. INITIALIZE CONNECTION /&gt;</div>
+          <h2 class="section-title">Let's Build Something <span class="text-accent">Legendary</span></h2>
+          <p class="section-subtitle">Have an exciting idea, project, or full-time opportunity? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Left Info Cards -->
+          <div class="contact-info-panel" data-reveal="fade-right">
+            <h3 class="contact-panel-title">Direct Coordinates</h3>
+            <p class="contact-panel-sub">
+              Feel free to reach out directly via WhatsApp, email or developer networks. I usually respond within a few hours.
+            </p>
+
+            <div class="contact-cards-list">
+              
+              <div class="contact-info-card">
+                <div class="cic-icon"><i class="fa-solid fa-envelope"></i></div>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=thenexfinity@gmail.com" target="_blank" rel="noopener noreferrer" class="cic-content">
+                  <span class="cic-label">Email Address</span>
+                  <span class="cic-val">thenexfinity@gmail.com</span>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=thenexfinity@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-action-btn" aria-label="Compose Gmail to Nexfinity">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  <span>Gmail</span>
+                </a>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="cic-icon"><i class="fa-solid fa-phone"></i></div>
+                <a href="tel:+919672244908" class="cic-content" aria-label="Call +91 96722 44908">
+                  <span class="cic-label">Call Mobile</span>
+                  <span class="cic-val">+91 96722 44908</span>
+                </a>
+                <a href="tel:+919672244908" class="contact-action-btn" aria-label="Call +91 96722 44908">
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                  <span>Call</span>
+                </a>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="cic-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="cic-content">
+                  <span class="cic-label">Location</span>
+                  <span class="cic-val">India &bull; Remote Worldwide</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social links -->
+            <div class="contact-social-bar">
+              <span class="csb-label">Follow &amp; Connect:</span>
+              <div class="csb-icons">
+                <a href="https://github.com/codewithankit-01" target="_blank" class="csb-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/919672244908" class="whatsapp-link csb-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=thenexfinity@gmail.com" target="_blank" rel="noopener noreferrer" class="csb-btn" title="Gmail" aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.instagram.com/theankitsharma1/" target="_blank" class="csb-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Right Form -->
+          <div class="contact-form-panel" data-reveal="fade-left">
+            <div class="contact-form-card">
+              <div class="form-header">
+                <h4><i class="fa-solid fa-terminal text-accent"></i> Send Encrypted Transmission</h4>
+                <span class="status-indicator-live">Live</span>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="userName">Your Name <span class="text-accent">*</span></label>
+                    <div class="input-wrapper">
+                      <i class="fa-regular fa-user"></i>
+                      <input type="text" id="userName" name="name" placeholder="John Doe" required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="userEmail">Your Email <span class="text-accent">*</span></label>
+                    <div class="input-wrapper">
+                      <i class="fa-regular fa-envelope"></i>
+                      <input type="email" id="userEmail" name="email" placeholder="john@example.com" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectType">Project Scope / Inquiry</label>
+                  <div class="input-wrapper select-wrapper">
+                    <i class="fa-solid fa-cubes"></i>
+                    <select id="projectType" name="projectType">
+                      <option value="fullstack">Full Stack Web Application</option>
+                      <option value="python">Python / Django Backend</option>
+                      <option value="wordpress">WordPress &amp; E-Commerce Website</option>
+                      <option value="uiux">UI/UX &amp; High-End Frontend</option>
+                      <option value="other">Other Inquiry</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="userMessage">Message Details <span class="text-accent">*</span></label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <textarea id="userMessage" name="message" rows="5" placeholder="Tell me about your project goals, timeline, and vision..." required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn" data-magnetic>
+                  <span class="btn-submit-text">Send via WhatsApp</span>
+                  <span class="btn-submit-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                  <span class="btn-spinner"></span>
+                </button>
+
+                <!-- Feedback Toast Status -->
+                <div class="form-status-msg" id="formStatusMsg"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      
+      <div class="footer-top">
+        <a href="#hero" class="nav-logo">
+          <img src="Logo/Nexfinity-brand.png" alt="Nexfinity" class="brand-logo">
+        </a>
+        <p class="footer-tagline">Your next digital dimension. Founded by Ankit Sharma.</p>
+        <div class="footer-nav">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 Nexfinity. Founded by Ankit Sharma. All Rights Reserved.
+        </p>
+
+        <!-- Back to Top Button -->
+        <a href="#hero" class="back-to-top" id="backToTop" title="Back to top" data-magnetic>
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== VIDEO / INTRO MODAL ==================== -->
+  <div class="modal-backdrop" id="introModal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title"><i class="fa-solid fa-play text-accent"></i> Nexfinity Studio Showcase</div>
+        <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="mock-video-player">
+          <div class="mock-video-screen">
+            <div class="video-overlay-elements">
+              <div class="cyber-scan-wave"></div>
+              <div class="video-center-prompt">
+                <i class="fa-solid fa-circle-play video-big-play"></i>
+                <h3 class="video-reel-title">Nexfinity &bull; Digital Experience Studio</h3>
+                <p>Python &bull; Django &bull; Full Stack Architecture &bull; Modern UI/UX Engineering</p>
+              </div>
+            </div>
+          </div>
+          <div class="mock-video-controls">
+            <button class="vc-btn"><i class="fa-solid fa-pause"></i></button>
+            <div class="vc-progress-bar"><div class="vc-progress-fill"></div></div>
+            <span class="vc-time">01:42 / 03:00</span>
+            <button class="vc-btn"><i class="fa-solid fa-volume-high"></i></button>
+            <button class="vc-btn"><i class="fa-solid fa-expand"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Engine -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

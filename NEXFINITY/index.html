@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXFINITY — Premium Website Development Studio</title>
+  <meta name="description" content="NEXFINITY is a premium website development studio crafting luxury digital experiences with avant-garde design, 3D motion and precision engineering." />
+  <meta name="theme-color" content="#05060a" />
+  <meta property="og:title" content="NEXFINITY — Premium Website Development Studio" />
+  <meta property="og:description" content="Digital experiences engineered to feel infinite. Luxury websites, 3D motion and brand systems for ambitious companies." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 48'%3E%3Cpath d='M40 24 C30 6, 6 6, 6 24 C6 42, 30 42, 40 24 C50 6, 74 6, 74 24 C74 42, 50 42, 40 24 Z' fill='none' stroke='%23d9b878' stroke-width='5'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <noscript>
+    <style>
+      .loader { display: none !important; }
+      body { overflow: auto !important; }
+      [data-reveal],
+      .hero__eyebrow,
+      .hero__lede,
+      .hero__actions,
+      .hero__stats,
+      .hero__badge,
+      .hero__title .line > span {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__top">
+      <span class="loader__meta">NEXFINITY — DIGITAL STUDIO</span>
+      <span class="loader__meta">EST. 2019 / WORLDWIDE</span>
+    </div>
+    <div class="loader__center">
+      <svg class="loader__mark" viewBox="0 0 80 48" aria-hidden="true">
+        <path d="M40 24 C30 6, 6 6, 6 24 C6 42, 30 42, 40 24 C50 6, 74 6, 74 24 C74 42, 50 42, 40 24 Z" />
+      </svg>
+      <span class="loader__word">NEXFINITY</span>
+    </div>
+    <div class="loader__bottom">
+      <div class="loader__track"><span class="loader__fill" id="loaderFill"></span></div>
+      <span class="loader__count" id="loaderCount">00</span>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#home" aria-label="NEXFINITY — home">
+      <svg class="brand__mark" viewBox="0 0 80 48" aria-hidden="true">
+        <path d="M40 24 C30 6, 6 6, 6 24 C6 42, 30 42, 40 24 C50 6, 74 6, 74 24 C74 42, 50 42, 40 24 Z" />
+      </svg>
+      <span class="brand__name">NEXFINITY</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#studio">Studio</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn--ghost nav__cta" href="#contact">Start a project</a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Mobile">
+        <a href="#studio"><span>01</span>Studio</a>
+        <a href="#services"><span>02</span>Services</a>
+        <a href="#work"><span>03</span>Work</a>
+        <a href="#process"><span>04</span>Process</a>
+        <a href="#contact"><span>05</span>Contact</a>
+      </nav>
+      <div class="menu__foot">
+        <a href="mailto:hello@nexfinity.co">hello@nexfinity.co</a>
+        <div class="menu__social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Behance">Behance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <canvas id="scene" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow"><i></i>Premium website development studio</p>
+
+          <h1 class="hero__title">
+            <span class="line"><span style="--i:0">Digital experiences</span></span>
+            <span class="line"><span style="--i:1">engineered to feel</span></span>
+            <span class="line"><span class="serif" style="--i:2">infinite.</span></span>
+          </h1>
+
+          <p class="hero__lede">
+            NEXFINITY fuses avant-garde design, real-time 3D motion and precision
+            engineering to build digital flagships for brands that refuse to blend in.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#contact" data-magnetic>
+              <span>Start your project</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="btn btn--ghost" href="#work" data-magnetic>
+              <span>Explore the work</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__value"><span data-count="120">0</span><em>+</em></span>
+            <span class="stat__label">Projects shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value"><span data-count="40">0</span><em>+</em></span>
+            <span class="stat__label">Global brands</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value"><span data-count="6">0</span><em>yrs</em></span>
+            <span class="stat__label">Crafting the web</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value"><span data-count="98">0</span><em>%</em></span>
+            <span class="stat__label">Client retention</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#studio" aria-label="Scroll to studio section">
+        <span class="hero__scroll-line"></span>
+        <span>Scroll to explore</span>
+      </a>
+
+      <div class="hero__badge" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <defs>
+            <path id="badgeCircle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
+          </defs>
+          <text>
+            <textPath href="#badgeCircle" startOffset="0">NEXFINITY • DIGITAL STUDIO • EST. 2019 •</textPath>
+          </text>
+          <g class="hero__badge-mark">
+            <path d="M60 48 C56 40, 44 40, 44 52 C44 64, 56 64, 60 56 C64 48, 76 48, 76 60 C76 72, 64 72, 60 64" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Web design <i>✦</i> Development <i>✦</i> 3D &amp; WebGL <i>✦</i> Brand identity <i>✦</i> Motion <i>✦</i> E-commerce <i>✦</i> SEO &amp; growth <i>✦</i></span>
+        <span>Web design <i>✦</i> Development <i>✦</i> 3D &amp; WebGL <i>✦</i> Brand identity <i>✦</i> Motion <i>✦</i> E-commerce <i>✦</i> SEO &amp; growth <i>✦</i></span>
+      </div>
+    </div>
+
+    <section class="section studio" id="studio">
+      <div class="container">
+        <div class="studio__grid">
+          <div class="studio__left">
+            <p class="eyebrow" data-reveal><i></i>01 — The studio</p>
+            <h2 class="sec-title" data-reveal>
+              We don't build websites.<br />
+              We build <em>presence.</em>
+            </h2>
+
+            <div class="mono-card" data-tilt data-tilt-max="10" data-reveal>
+              <div class="mono-card__inner">
+                <div class="mono-card__plane mono-card__plane--back"></div>
+                <div class="mono-card__plane mono-card__plane--mid"></div>
+                <div class="mono-card__plane mono-card__plane--front">
+                  <span class="mono-card__letter">N</span>
+                  <span class="mono-card__tag">EST. 2019</span>
+                  <span class="mono-card__line"></span>
+                  <span class="mono-card__tag mono-card__tag--r">∞</span>
+                </div>
+                <span class="mono-card__caption">NEXFINITY / DIGITAL FLAGSHIPS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio__right">
+            <p class="studio__copy" data-reveal>
+              The internet is infinite. Most websites aren't. We exist to close that gap.
+            </p>
+            <p class="studio__text" data-reveal>
+              NEXFINITY is a boutique digital studio for companies with serious ambition.
+              We operate at the intersection of editorial design and advanced engineering —
+              where every scroll, transition and pixel is composed with intent.
+            </p>
+            <p class="studio__text" data-reveal>
+              No templates. No shortcuts. Every project is designed from first principles,
+              hand-built for speed, and finished with the kind of detail people feel
+              before they can explain it.
+            </p>
+
+            <blockquote class="studio__quote" data-reveal>
+              <span class="studio__quote-mark">“</span>
+              The internet is infinite.<br />
+              <em>We design like it.</em>
+            </blockquote>
+
+            <ul class="studio__points">
+              <li data-reveal><span>01</span>Strategy-led, editorially driven design</li>
+              <li data-reveal><span>02</span>Real-time 3D, WebGL &amp; motion systems</li>
+              <li data-reveal><span>03</span>Hand-coded, performance-obsessed builds</li>
+              <li data-reveal><span>04</span>End-to-end delivery, launch to scale</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="eyebrow" data-reveal><i></i>02 — Capabilities</p>
+            <h2 class="sec-title" data-reveal>Everything your brand needs<br />to feel <em>untouchable.</em></h2>
+          </div>
+          <p class="sec-head__aside" data-reveal>
+            One studio. Six disciplines. Zero hand-offs — so the vision that leaves
+            the design room is the vision that ships.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service" data-reveal>
+            <span class="service__num">01</span>
+            <span class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/><path d="M18.5 15.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2z"/></svg>
+            </span>
+            <h3>Brand &amp; identity</h3>
+            <p>Logo systems, art direction and identity guidelines engineered to command a premium.</p>
+            <span class="service__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </article>
+
+          <article class="service" data-reveal>
+            <span class="service__num">02</span>
+            <span class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9h18M9 9v11"/></svg>
+            </span>
+            <h3>Website design</h3>
+            <p>Editorial layouts, interaction design and design systems built for conversion and awe.</p>
+            <span class="service__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </article>
+
+          <article class="service" data-reveal>
+            <span class="service__num">03</span>
+            <span class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg>
+            </span>
+            <h3>Development</h3>
+            <p>Hand-coded, lightning-fast builds. Headless CMS, custom integrations, zero bloat.</p>
+            <span class="service__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </article>
+
+          <article class="service" data-reveal>
+            <span class="service__num">04</span>
+            <span class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></svg>
+            </span>
+            <h3>3D &amp; motion</h3>
+            <p>Real-time WebGL scenes, shader work and micro-interactions that make brands unforgettable.</p>
+            <span class="service__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </article>
+
+          <article class="service" data-reveal>
+            <span class="service__num">05</span>
+            <span class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+            </span>
+            <h3>E-commerce</h3>
+            <p>Luxury storefronts on Shopify and headless stacks — built to sell without sacrificing soul.</p>
+            <span class="service__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </article>
+
+          <article class="service" data-reveal>
+            <span class="service__num">06</span>
+            <span class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h16"/><path d="M8 15l3-4 3 2 4-6"/><path d="M15 7h3v3"/></svg>
+            </span>
+            <h3>SEO &amp; growth</h3>
+            <p>Technical SEO, analytics and experimentation that compound traffic long after launch.</p>
+            <span class="service__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="eyebrow" data-reveal><i></i>03 — Selected work</p>
+            <h2 class="sec-title" data-reveal>Flagships, not<br /><em>brochures.</em></h2>
+          </div>
+          <p class="sec-head__aside" data-reveal>
+            A selection of digital flagships — each one a study in restraint,
+            motion and measurable impact.
+          </p>
+        </div>
+
+        <div class="work__grid">
+          <a class="project" href="#contact" aria-label="Start a project like Aurelia" data-reveal>
+            <div class="cover cover--aurelia">
+              <span class="cover__ring"></span>
+              <span class="cover__ring cover__ring--2"></span>
+              <span class="cover__serif">A</span>
+              <span class="cover__label">AURELIA</span>
+              <span class="cover__sub">Fine jewellery · E-commerce</span>
+              <span class="cover__shine"></span>
+            </div>
+            <div class="project__meta">
+              <div>
+                <h3>Aurelia</h3>
+                <p>Digital flagship &amp; commerce for a heritage jeweller.</p>
+              </div>
+              <span class="project__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+
+          <a class="project" href="#contact" aria-label="Start a project like Volt" data-reveal>
+            <div class="cover cover--volt">
+              <span class="cover__grid"></span>
+              <svg class="cover__chart" viewBox="0 0 420 220" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="voltLine" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#d9b878" stop-opacity="0.15" />
+                    <stop offset="55%" stop-color="#f0d6a4" />
+                    <stop offset="100%" stop-color="#fffaf0" />
+                  </linearGradient>
+                  <linearGradient id="voltFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#d9b878" stop-opacity="0.28" />
+                    <stop offset="100%" stop-color="#d9b878" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path d="M0 190 L0 160 C40 150 60 168 90 150 C120 132 140 150 175 122 C210 94 235 120 265 96 C300 68 330 90 360 58 C380 32 392 40 400 26 L420 220 L0 220 Z" fill="url(#voltFill)" />
+                <path d="M0 160 C40 150 60 168 90 150 C120 132 140 150 175 122 C210 94 235 120 265 96 C300 68 330 90 360 58 C380 32 392 40 400 26" fill="none" stroke="url(#voltLine)" stroke-width="1.4" />
+                <circle cx="400" cy="26" r="4" fill="#fffaf0" />
+                <circle cx="400" cy="26" r="10" fill="none" stroke="#fffaf0" stroke-opacity="0.35" />
+              </svg>
+              <span class="cover__label">VOLT</span>
+              <span class="cover__metric">+212% <small>growth</small></span>
+              <span class="cover__sub">Fintech platform · Website &amp; brand</span>
+              <span class="cover__shine"></span>
+            </div>
+            <div class="project__meta">
+              <div>
+                <h3>Volt</h3>
+                <p>A fintech site that turned data into desire.</p>
+              </div>
+              <span class="project__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+
+          <a class="project" href="#contact" aria-label="Start a project like Mirage" data-reveal>
+            <div class="cover cover--mirage">
+              <span class="cover__arch"></span>
+              <span class="cover__rule cover__rule--1"></span>
+              <span class="cover__rule cover__rule--2"></span>
+              <span class="cover__serif">M</span>
+              <span class="cover__label">MIRAGE</span>
+              <span class="cover__sub">Architecture · Portfolio</span>
+              <span class="cover__shine"></span>
+            </div>
+            <div class="project__meta">
+              <div>
+                <h3>Mirage</h3>
+                <p>An architectural portfolio built on negative space.</p>
+              </div>
+              <span class="project__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+
+          <a class="project" href="#contact" aria-label="Start a project like Kairos" data-reveal>
+            <div class="cover cover--kairos">
+              <span class="cover__orb"></span>
+              <span class="cover__orbit"></span>
+              <span class="cover__orbit cover__orbit--2"></span>
+              <span class="cover__label">KAIROS</span>
+              <span class="cover__sub">Web3 · Immersive experience</span>
+              <span class="cover__shine"></span>
+            </div>
+            <div class="project__meta">
+              <div>
+                <h3>Kairos</h3>
+                <p>A WebGL world for a next-generation collective.</p>
+              </div>
+              <span class="project__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="tech-strip" aria-hidden="true">
+      <div class="tech-strip__track">
+        <span>Three.js <i>·</i> WebGL <i>·</i> GLSL <i>·</i> React <i>·</i> Next.js <i>·</i> Node <i>·</i> Shopify <i>·</i> GSAP <i>·</i> Framer <i>·</i> Vercel <i>·</i> Sanity <i>·</i></span>
+        <span>Three.js <i>·</i> WebGL <i>·</i> GLSL <i>·</i> React <i>·</i> Next.js <i>·</i> Node <i>·</i> Shopify <i>·</i> GSAP <i>·</i> Framer <i>·</i> Vercel <i>·</i> Sanity <i>·</i></span>
+      </div>
+    </div>
+
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="process__grid">
+          <div class="process__intro">
+            <p class="eyebrow" data-reveal><i></i>04 — The process</p>
+            <h2 class="sec-title" data-reveal>Four movements.<br /><em>One obsession.</em></h2>
+            <p class="process__copy" data-reveal>
+              A disciplined, transparent process refined over six years — so ambitious
+              ideas arrive on time, on budget, and beyond expectation.
+            </p>
+            <a class="btn btn--gold" href="#contact" data-magnetic data-reveal>
+              <span>Begin the conversation</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </div>
+
+          <ol class="process__steps">
+            <li class="step" data-reveal>
+              <span class="step__num">01</span>
+              <div class="step__body">
+                <h3>Discover</h3>
+                <p>Immersion, research and strategy. We map the brand, the audience and the ambition before a single pixel moves.</p>
+              </div>
+              <span class="step__tag">Week 01–02</span>
+            </li>
+            <li class="step" data-reveal>
+              <span class="step__num">02</span>
+              <div class="step__body">
+                <h3>Design</h3>
+                <p>Art direction, editorial layouts and high-fidelity prototypes. Every screen presented in context, never in isolation.</p>
+              </div>
+              <span class="step__tag">Week 02–05</span>
+            </li>
+            <li class="step" data-reveal>
+              <span class="step__num">03</span>
+              <div class="step__body">
+                <h3>Develop</h3>
+                <p>Hand-coded engineering, 3D and motion systems. Built for speed, accessibility and effortless content control.</p>
+              </div>
+              <span class="step__tag">Week 05–09</span>
+            </li>
+            <li class="step" data-reveal>
+              <span class="step__num">04</span>
+              <div class="step__body">
+                <h3>Deploy</h3>
+                <p>Launch, measure, refine. We stay close after release — optimising, evolving and scaling what we built together.</p>
+              </div>
+              <span class="step__tag">Ongoing</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quotes" id="voices">
+      <div class="container">
+        <div class="sec-head sec-head--center">
+          <p class="eyebrow" data-reveal><i></i>05 — Client voices</p>
+          <h2 class="sec-title" data-reveal>Trusted by the <em>ambitious.</em></h2>
+        </div>
+
+        <div class="quotes__slider" data-quotes data-reveal>
+          <div class="quotes__viewport">
+            <div class="quotes__track" id="quoteTrack">
+              <figure class="quote">
+                <blockquote>
+                  “NEXFINITY rebuilt our digital flagship from the ground up. The craft is
+                  absurd — and our revenue is up 212% since launch.”
+                </blockquote>
+                <figcaption>
+                  <span class="quote__name">Aarav Mehta</span>
+                  <span class="quote__role">Founder, Aurelia</span>
+                </figcaption>
+              </figure>
+
+              <figure class="quote">
+                <blockquote>
+                  “The most detail-obsessed team we've worked with. They treated our brand
+                  like their own legacy — and it shows in every interaction.”
+                </blockquote>
+                <figcaption>
+                  <span class="quote__name">Sofia Keller</span>
+                  <span class="quote__role">CMO, Volt</span>
+                </figcaption>
+              </figure>
+
+              <figure class="quote">
+                <blockquote>
+                  “Our old site explained the work. The new one makes people feel it.
+                  Enquiries tripled in the first quarter.”
+                </blockquote>
+                <figcaption>
+                  <span class="quote__name">Rohan Kapoor</span>
+                  <span class="quote__role">Director, Mirage</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="quotes__nav">
+            <button class="quotes__arrow" type="button" data-quote-prev aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+            </button>
+            <div class="quotes__dots" role="tablist" aria-label="Testimonials">
+              <button type="button" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+              <button type="button" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+              <button type="button" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="quotes__arrow" type="button" data-quote-next aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__left">
+            <p class="eyebrow" data-reveal><i></i>06 — Start a project</p>
+            <h2 class="contact__title" data-reveal>Let's make something <em>eternal.</em></h2>
+            <p class="contact__copy" data-reveal>
+              Tell us about your ambition. We take on a limited number of flagship
+              projects each quarter — so every brand gets our full obsession.
+            </p>
+
+            <div class="contact__details" data-reveal>
+              <a href="mailto:hello@nexfinity.co" class="contact__detail">
+                <span>Email</span>
+                <strong>hello@nexfinity.co</strong>
+              </a>
+              <a href="tel:+919876543210" class="contact__detail">
+                <span>Phone</span>
+                <strong>+91 98765 43210</strong>
+              </a>
+              <div class="contact__detail">
+                <span>Studio</span>
+                <strong>Remote · Worldwide</strong>
+              </div>
+            </div>
+
+            <div class="contact__socials" data-reveal>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Behance">Behance</a>
+              <a href="#" aria-label="Dribbble">Dribbble</a>
+            </div>
+          </div>
+
+          <div class="contact__right" data-reveal>
+            <form class="form" id="contactForm" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label for="name">Your name</label>
+                  <input type="text" id="name" name="name" autocomplete="name" placeholder="Arjun Sharma" required />
+                  <span class="field__error" data-error-for="name"></span>
+                </div>
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com" required />
+                  <span class="field__error" data-error-for="email"></span>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" autocomplete="organization" placeholder="Company name" />
+                </div>
+                <div class="field">
+                  <label for="budget">Project budget</label>
+                  <select id="budget" name="budget">
+                    <option value="">Select a range</option>
+                    <option>Under ₹1,00,000</option>
+                    <option>₹1,00,000 – ₹3,00,000</option>
+                    <option>₹3,00,000 – ₹8,00,000</option>
+                    <option>₹8,00,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Tell us about the project</label>
+                <textarea id="message" name="message" rows="4" placeholder="What are you building, and what should it make people feel?" required></textarea>
+                <span class="field__error" data-error-for="message"></span>
+              </div>
+
+              <button class="btn btn--gold btn--full" type="submit" data-magnetic>
+                <span>Send the brief</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+
+              <p class="form__note">No spam. Your brief opens directly in your email app, addressed to our studio.</p>
+            </form>
+
+            <div class="form__success" id="formSuccess" hidden>
+              <span class="form__success-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+              </span>
+              <h3>Your brief is on its way.</h3>
+              <p>If your mail app didn't open, write to <a href="mailto:hello@nexfinity.co">hello@nexfinity.co</a> — we reply within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="#home" aria-label="NEXFINITY — home">
+            <svg class="brand__mark" viewBox="0 0 80 48" aria-hidden="true">
+              <path d="M40 24 C30 6, 6 6, 6 24 C6 42, 30 42, 40 24 C50 6, 74 6, 74 24 C74 42, 50 42, 40 24 Z" />
+            </svg>
+            <span class="brand__name">NEXFINITY</span>
+          </a>
+          <p>Digital experiences engineered<br />to feel infinite.</p>
+        </div>
+
+        <div class="footer__col">
+          <span class="footer__head">Studio</span>
+          <a href="#studio">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+        </div>
+
+        <div class="footer__col">
+          <span class="footer__head">Connect</span>
+          <a href="mailto:hello@nexfinity.co">Email</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Behance">Behance</a>
+        </div>
+
+        <div class="footer__col footer__col--cta">
+          <span class="footer__head">New business</span>
+          <a href="mailto:hello@nexfinity.co" class="footer__mail">hello@nexfinity.co</a>
+          <a href="#contact" class="footer__link">Start a project →</a>
+        </div>
+      </div>
+
+      <div class="footer__wordmark" aria-hidden="true">NEXFINITY</div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> NEXFINITY. All rights reserved.</span>
+        <span class="footer__made">Designed &amp; engineered in-house — with obsession.</span>
+        <a href="#home" class="footer__top-link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/three.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
